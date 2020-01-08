@@ -1,53 +1,38 @@
 <template>
-  <section class="section">
-    <div class="columns is-mobile">
-      <card
-        title="Free"
-        icon="github-circle"
-      >
-        Open source on <a href="https://github.com/buefy/buefy">
-          GitHub
-        </a>
-      </card>
-
-      <card
-        title="Responsive"
-        icon="cellphone-link"
-      >
-        <b class="has-text-grey">
-          Every
-        </b> component is responsive
-      </card>
-
-      <card
-        title="Modern"
-        icon="alert-decagram"
-      >
-        Built with <a href="https://vuejs.org/">
-          Vue.js
-        </a> and <a href="http://bulma.io/">
-          Bulma
-        </a>
-      </card>
-
-      <card
-        title="Lightweight"
-        icon="arrange-bring-to-front"
-      >
-        No other internal dependency
-      </card>
-    </div>
-  </section>
+  <div>
+    <div id="b"></div>
+    <section-a data-aos="fade-up" data-aos-anchor-placement="center-center"></section-a>
+    <section-b data-aos="fade-up" data-aos-anchor-placement="top-center"></section-b>
+    <section-c data-aos="fade-up" data-aos-anchor-placement="top-center"></section-c>
+    <section-d data-aos="fade-up" data-aos-anchor-placement="top-center"></section-d>
+    <guarantee data-aos="fade-up" data-aos-anchor-placement="top-center"></guarantee>
+    <faq></faq>
+    <footer-c></footer-c>
+  </div>
 </template>
 
 <script>
-import Card from '~/components/Card'
-
-export default {
-  name: 'HomePage',
-
-  components: {
-    Card
+  import SectionA from '~/components/SectionA'
+  import SectionB from '~/components/SectionB'
+  import SectionC from '~/components/SectionC'
+  import SectionD from '~/components/SectionD'
+  import Guarantee from '~/components/Guarantee'
+  import Faq from '~/components/Faq'
+  import FooterC from '~/components/Footer'
+  export default {
+    components: {
+      SectionA, SectionB, SectionC, SectionD, Guarantee, Faq, FooterC
+    }
   }
-}
 </script>
+
+<style lang="scss" scoped>
+  #b {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 920px;
+    z-index: -1;
+    background: linear-gradient(180deg, rgba(27, 33, 55, 0) 56.3%, #1B2137 100%), url(../assets/bg.jpg);
+  }
+</style>

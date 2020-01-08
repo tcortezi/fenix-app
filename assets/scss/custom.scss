@@ -1,0 +1,94 @@
+@import "~bulma/sass/utilities/_all";
+
+$family-primary: 'Inter', sans-serif;
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+$primary: #FFB705;
+$primary-invert: findColorInvert($primary);
+
+$body-background-color: #1B2137;
+$fullhd: 1200px;
+$text: #212A47;
+$text-strong: inherit;
+$column-gap: 30px;
+
+$colors: (
+    "white": ($white, $black),
+    "black": ($black, $white),
+    "light": ($light, $light-invert),
+    "dark": ($dark, $dark-invert),
+    "primary": ($primary, $primary-invert),
+    "info": ($info, $info-invert),
+    "success": ($success, $success-invert),
+    "warning": ($warning, $warning-invert),
+    "danger": ($danger, $danger-invert)
+);
+
+$link: #ffffff;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+@import "font";
+
+html {
+    overflow-y: auto;
+}
+
+.btn {
+  background: #FFB705;
+  color: #1B2137;
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: bold;
+  padding: 25px 66px;
+  box-shadow: 0px 12px 20px rgba(5, 7, 11, 0.6);
+  transition: all .2s ease !important;
+  &:hover {
+    box-shadow: 0px 20px 20px rgba(5, 7, 11, 0.6);
+    transform: scale(1.02) !important;
+    color: #1B2137;
+  }
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 52px;
+  color: #1B2137;
+  > span { color: #FFB705; }
+  margin-bottom: 30px;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  > p {
+    font-size: 18px;
+    line-height: 22px;
+    color: #2C8C99;
+    margin-bottom: 16px;
+  }
+  > img { margin-top: 16px; }
+}
+
+  @media screen and (max-width: 769px) {
+    .btn {
+      font-size: 20px;
+      padding: 8px;
+      width: 90%;
+      text-align: center;
+    }
+    h2 {
+      font-size: 32px;
+      line-height: 38px;
+    }
+    p { font-size: 1rem; line-height: 1.5rem; }
+    .cta {
+      > p { font-size: 1rem; line-height: 1.5rem; }
+    }
+  }
