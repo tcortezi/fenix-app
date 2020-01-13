@@ -1,7 +1,7 @@
 <template>
   <div>
     <div id="b"></div>
-    <section-a data-aos="fade-up" data-aos-anchor-placement="center-center"></section-a>
+    <section-a data-aos="fade-up"></section-a>
     <section-b data-aos="fade-up" data-aos-anchor-placement="top-center"></section-b>
     <section-c data-aos="fade-up" data-aos-anchor-placement="top-center"></section-c>
     <section-d data-aos="fade-up" data-aos-anchor-placement="top-center"></section-d>
