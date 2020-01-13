@@ -10,7 +10,12 @@
 	      do seu celular!
 	    </h1>
 	    <img id="kick" src="../assets/kick.png">
-	    <a href="#" class="btn" data-aos="fade-down" data-aos-easing="linear">
+      <a
+        href="https://app.monetizze.com.br/checkout/DVX69978"
+        class="btn"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+      >
 	      <img src="../assets/btn-icon.svg">
 	      <span>ENTRE PARA O CLUBE</span>
 	    </a>

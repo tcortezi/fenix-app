@@ -31,7 +31,7 @@
       </div>
 			<div class="cta">
 				<p>R$ 99,90 mensais</p>
-				<a class="btn" href="#">
+				<a href="https://app.monetizze.com.br/checkout/DVX69978" class="btn">
 					QUERO ENTRAR PRO CLUBE
 				</a>
 				<img src="../assets/cards.png" width="240px">
