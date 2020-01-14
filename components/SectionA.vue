@@ -11,7 +11,7 @@
 	    </h1>
 	    <img id="kick" src="../assets/kick.png">
       <a
-        href="https://app.monetizze.com.br/checkout/DVX69978"
+        href="https://app.monetizze.com.br/checkout/DVU70153"
         class="btn"
         data-aos="fade-down"
         data-aos-easing="linear"

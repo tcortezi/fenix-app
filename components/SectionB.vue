@@ -29,7 +29,7 @@
 			</div>
 			<div class="cta">
 				<p>R$ 99,90 mensais</p>
-				<a href="https://app.monetizze.com.br/checkout/DVX69978" class="btn">
+				<a href="https://app.monetizze.com.br/checkout/DVU70153" class="btn">
 					QUERO COMEÇAR A LUCRAR
 				</a>
 				<img src="../assets/cards.png">
