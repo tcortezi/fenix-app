@@ -7,7 +7,7 @@
 						Ainda tem <span>dúvidas?</span>
 					</h2>
 					<p>
-						Não tem problema. Entre agora no nosso grupo gratuito e tenha uma experiência <strong>sem compromissos</strong> do nosso trabalho e comece a rentabilizar seu dinheiro também!
+						Não tem problema. <span><a href="https://t.me/joinchat/Le6GKFD_j50Iiq98eMdfpw" class="free-chat" target="_blank">Entre agora no nosso grupo gratuito</a></span> e tenha uma experiência <strong>sem compromissos</strong> do nosso trabalho e comece a rentabilizar seu dinheiro também!
 					</p>
 				</div>
 				<div class="column is-narrow">
@@ -40,6 +40,14 @@
 </script>
 
 <style lang="scss" scoped>
+	.free-chat {
+		color: rgba(255, 255, 255, 0.8);
+		opacity: .85;
+		text-decoration: underline;
+		&:hover {
+			opacity: 1;
+		}
+	}
 	section > .container {
 		margin-top: 149px;
 		h2 { color: white; }
