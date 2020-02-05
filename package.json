@@ -21,6 +21,7 @@
     "node-sass": "^4.13.0",
     "nuxt": "^2.0.0",
     "nuxt-buefy": "^0.3.2",
+    "nuxt-social-meta": "^0.0.1",
     "sass-loader": "^8.0.0",
     "vuex-persist": "^2.2.0"
   },

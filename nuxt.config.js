@@ -48,6 +48,11 @@ export default {
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
+    ['nuxt-social-meta', {
+      url: 'fenixtraderclub.com',
+      title: 'Fênix Trader Club',
+      description: 'Lucre com nossas indicações no mercado esportivo através do seu celular!'
+    }]
   ],
   /*
   ** Axios module configuration
