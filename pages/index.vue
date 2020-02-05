@@ -1,14 +1,14 @@
 <template>
   <div>
     <div id="b"></div>
-    <section-a data-aos="fade-up" :checkout="checkoutLink"></section-a>
-    <section-b data-aos="fade-up" data-aos-anchor-placement="top-center" :checkout="checkoutLink">
+    <section-a data-aos="fade-up" :checkout="checkoutUrl"></section-a>
+    <section-b data-aos="fade-up" data-aos-anchor-placement="top-center" :checkout="checkoutUrl">
     </section-b>
     <section-c data-aos="fade-up" data-aos-anchor-placement="top-center"></section-c>
-    <section-d data-aos="fade-up" data-aos-anchor-placement="top-center" :checkout="checkoutLink">
+    <section-d data-aos="fade-up" data-aos-anchor-placement="top-center" :checkout="checkoutUrl">
     </section-d>
     <guarantee data-aos="fade-up" data-aos-anchor-placement="top-center"></guarantee>
-    <faq :checkout="checkoutLink"></faq>
+    <faq :checkout="checkoutUrl"></faq>
     <footer-c></footer-c>
   </div>
 </template>
@@ -22,13 +22,12 @@
   import Faq from '~/components/Faq'
   import FooterC from '~/components/Footer'
   export default {
-    middleware: 'affiliate',
     components: {
       SectionA, SectionB, SectionC, SectionD, Guarantee, Faq, FooterC
     },
     computed: {
-      checkoutLink() {
-        if(this.$store.state.triggerAffiliate) {
+      checkoutUrl() {
+        if(this.$route.query.marketing === 'clarific') {
           this.$store.commit('affiliate')
         }
         return this.$store.state.checkout

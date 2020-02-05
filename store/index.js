@@ -1,20 +1,14 @@
 import Vuex from 'vuex'
-import Url from 'url'
-
-const monetizze = 'https://app.monetizze.com.br'
+import checkoutUrls from '~/data/checkouts.json'
 
 export default () => {
 	return new Vuex.Store({
 		state: () => ({
-				checkout: Url.resolve(monetizze, 'checkout/DVU70153'),
-				triggerAffiliate: false
+				checkout: checkoutUrls.monthly.normal
 		}),
 		mutations: {
 			affiliate(state) {
-				state.checkout = Url.resolve(monetizze, 'r/AAT7717077?u=c&pl=VU70153')
-			},
-			trigger(state) {
-				state.triggerAffiliate = true
+				state.checkout = checkoutUrls.affiliates.clarific.monthly.normal
 			}
 		}
 	})

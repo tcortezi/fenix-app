@@ -1,0 +1,14 @@
+{
+	"monthly": {
+		"normal": "https://app.monetizze.com.br/checkout/DVU70153",
+		"freeTrial": "https://app.monetizze.com.br/checkout/DKL71412"
+	},
+	"affiliates": {
+		"clarific": {
+			"monthly": {
+				"normal": "https://app.monetizze.com.br/r/AAT7717077?u=c&pl=VU70153",
+				"freeTrial": "https://app.monetizze.com.br/r/AAT7717077?u=c&pl=KL71412"
+			}
+		}
+	}
+}
