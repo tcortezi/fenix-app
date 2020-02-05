@@ -1,12 +1,14 @@
 <template>
   <div>
     <div id="b"></div>
-    <section-a data-aos="fade-up"></section-a>
-    <section-b data-aos="fade-up" data-aos-anchor-placement="top-center"></section-b>
+    <section-a data-aos="fade-up" :checkout="checkoutLink"></section-a>
+    <section-b data-aos="fade-up" data-aos-anchor-placement="top-center" :checkout="checkoutLink">
+    </section-b>
     <section-c data-aos="fade-up" data-aos-anchor-placement="top-center"></section-c>
-    <section-d data-aos="fade-up" data-aos-anchor-placement="top-center"></section-d>
+    <section-d data-aos="fade-up" data-aos-anchor-placement="top-center" :checkout="checkoutLink">
+    </section-d>
     <guarantee data-aos="fade-up" data-aos-anchor-placement="top-center"></guarantee>
-    <faq></faq>
+    <faq :checkout="checkoutLink"></faq>
     <footer-c></footer-c>
   </div>
 </template>
@@ -20,8 +22,17 @@
   import Faq from '~/components/Faq'
   import FooterC from '~/components/Footer'
   export default {
+    middleware: 'affiliate',
     components: {
       SectionA, SectionB, SectionC, SectionD, Guarantee, Faq, FooterC
+    },
+    computed: {
+      checkoutLink() {
+        if(this.$store.state.triggerAffiliate) {
+          this.$store.commit('affiliate')
+        }
+        return this.$store.state.checkout
+      }
     }
   }
 </script>

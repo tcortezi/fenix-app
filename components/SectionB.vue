@@ -29,7 +29,7 @@
 			</div>
 			<div class="cta">
 				<p>R$ 99,90 mensais</p>
-				<a href="https://app.monetizze.com.br/checkout/DVU70153" class="btn">
+				<a :href="checkout" class="btn">
 					QUERO COMEÇAR A LUCRAR
 				</a>
 				<img src="../assets/cards.png">
@@ -37,6 +37,12 @@
 		</div>
 	</section>
 </template>
+
+<script>
+	export default {
+		props: ['checkout']
+	}
+</script>
 
 <style lang="scss" scoped>
 	section > .container {

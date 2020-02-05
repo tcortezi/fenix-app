@@ -11,7 +11,7 @@
 	    </h1>
 	    <img id="kick" src="../assets/kick.png">
       <a
-        href="https://app.monetizze.com.br/checkout/DVU70153"
+        :href="checkout"
         class="btn"
         data-aos="fade-down"
         data-aos-easing="linear"
@@ -22,6 +22,12 @@
 	  </div>
 	</section>
 </template>
+
+<script>
+  export default {
+    props: ['checkout']
+  }
+</script>
 
 <style lang="scss" scoped>
   .section.a > .container {

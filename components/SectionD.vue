@@ -19,7 +19,7 @@
 			</div>
 			<div class="cta" data-aos="fade-down" data-aos-easing="linear" data-aos-anchor-placement="top-bottom">
 				<p>R$ 99,90 mensais</p>
-				<a href="https://app.monetizze.com.br/checkout/DVU70153" class="btn">
+				<a :href="checkout" class="btn">
 					QUERO ENTRAR PRO CLUBE
 				</a>
 				<img src="../assets/cards.png" width="240px">
@@ -27,6 +27,12 @@
 		</div>
 	</section>
 </template>
+
+<script>
+	export default {
+		props: ['checkout']
+	}
+</script>
 
 <style lang="scss" scoped>
 	section > .container {
