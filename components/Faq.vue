@@ -24,9 +24,8 @@
           Quanto preciso investir?
         </div>
         <div class="itemDesc">
-          Para tornar-se membro da <strong>Fênix Club</strong> você pode pagar a assinatura padrão de 100 reais mensais, ou se quiser, aproveitar nossa promoção para membros que desejam pagar bimestralmente. Desta forma você paga 175 reais a cada dois meses, o que equivale a R$ 87,50 mensais. <br /><br />
-          Em relação as entradas, você pode começar com o que tem disponível, mesmo que seja pouco.<br />
-          Com o tempo, o montante de suas entradas vão tomando corpo e você investe de acordo com o seu perfil de investimento.
+          Você pode começar com qualquer valor, mesmo que seja pouco.<br />
+          O importante é começar o quanto antes para que seus ganhos aumentem e se multipliquem.
         </div>
       </div>
       <div class="item" @click="select(4)" :class="{active:selected == 4}">
