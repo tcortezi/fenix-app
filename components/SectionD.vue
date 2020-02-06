@@ -18,7 +18,8 @@
 				</div>
 			</div>
 			<div class="cta" data-aos="fade-down" data-aos-easing="linear" data-aos-anchor-placement="top-bottom">
-				<p>R$ 99,90 mensais</p>
+				<p v-if="$store.state.plan == 'normal'">R$ 99,90 mensais</p>
+				<p v-else>3 dias grátis. R$ 99,90/mês</p>
 				<a :href="checkout" class="btn">
 					QUERO ENTRAR PRO CLUBE
 				</a>

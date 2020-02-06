@@ -29,7 +29,8 @@
     computed: {
       checkoutUrl() {
         const affiliate = this.$route.query.marketing || this.$store.state.affiliate
-        const plan = this.$route.query.plan || 'normal'
+        const plan = this.$route.query.plan || this.$store.state.plan
+        this.$store.commit('changePlan', plan)
         let checkout
         if(affiliate) {
           this.$store.commit('changeAffiliate', affiliate)
