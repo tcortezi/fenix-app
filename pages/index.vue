@@ -21,16 +21,24 @@
   import Guarantee from '~/components/Guarantee'
   import Faq from '~/components/Faq'
   import FooterC from '~/components/Footer'
+  import checkoutUrls from '~/data/checkouts.json'
   export default {
     components: {
       SectionA, SectionB, SectionC, SectionD, Guarantee, Faq, FooterC
     },
     computed: {
       checkoutUrl() {
-        if(this.$route.query.marketing === 'clarific') {
-          this.$store.commit('affiliate')
+        const affiliate = this.$route.query.marketing || this.$store.state.affiliate
+        const plan = this.$route.query.plan || 'normal'
+        let checkout
+        if(affiliate) {
+          this.$store.commit('changeAffiliate', affiliate)
+          checkout = checkoutUrls.affiliates[affiliate].monthly[plan]
+        } else {
+          checkout = checkoutUrls.monthly[plan]
         }
-        return this.$store.state.checkout
+
+        return checkout
       }
     }
   }
