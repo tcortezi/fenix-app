@@ -17,7 +17,8 @@
         data-aos-easing="linear"
       >
 	      <img src="../assets/btn-icon.svg">
-	      <span>ENTRE PARA O CLUBE</span>
+	      <span v-if="$store.state.plan == 'normal'">ENTRE PARA O CLUBE</span>
+        <span v-else>COMECE SEU TESTE GRÁTIS</span>
 	    </a>
 	  </div>
 	</section>

@@ -29,6 +29,14 @@
           Com o tempo, o montante de suas entradas vão tomando corpo e você investe de acordo com o seu perfil de investimento.
         </div>
       </div>
+      <div class="item" @click="select(4)" :class="{active:selected == 4}">
+        <div class="itemTitle">
+          Posso cancelar minha assinatura?
+        </div>
+        <div class="itemDesc">
+			Claro! Você pode cancelar a sua assinatura a qualquer momento.
+        </div>
+      </div>
 			<div class="cta">
 				<p v-if="$store.state.plan == 'normal'">R$ 99,90 mensais</p>
 				<p v-else>3 dias grátis. R$ 99,90/mês</p>

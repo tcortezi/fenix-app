@@ -7,7 +7,11 @@
     <section-c data-aos="fade-up" data-aos-anchor-placement="top-center"></section-c>
     <section-d data-aos="fade-up" data-aos-anchor-placement="top-center" :checkout="checkoutUrl">
     </section-d>
-    <guarantee data-aos="fade-up" data-aos-anchor-placement="top-center"></guarantee>
+    <guarantee
+      v-if="$store.state.plan == 'normal'"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-center">
+    </guarantee>
     <faq :checkout="checkoutUrl"></faq>
     <footer-c></footer-c>
   </div>
