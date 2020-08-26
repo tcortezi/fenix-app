@@ -29,15 +29,16 @@
     },
     computed: {
       checkoutUrl() {
+        const version = this.$route.query.version || '1'
         const affiliate = this.$route.query.marketing || this.$store.state.affiliate
         const plan = this.$route.query.plan || this.$store.state.plan
         this.$store.commit('changePlan', plan)
         let checkout
         if(affiliate) {
           this.$store.commit('changeAffiliate', affiliate)
-          checkout = checkoutUrls.affiliates[affiliate].monthly[plan]
+          checkout = checkoutUrls[version].affiliates[affiliate].monthly[plan]
         } else {
-          checkout = checkoutUrls.monthly[plan]
+          checkout = checkoutUrls[version].monthly[plan]
         }
 
         return checkout
